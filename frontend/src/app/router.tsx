@@ -76,73 +76,73 @@ const ForgotPassword = lazyPage(() => import("../pages/auth/ForgotPassword"), "F
 const ResetPassword = lazyPage(() => import("../pages/auth/ResetPassword"), "ResetPassword");
 
 // Customer portal
-import { CustomerDashboard } from "../pages/app/customer/Dashboard";
-import { Shop as CustomerShop } from "../pages/app/customer/Shop";
-import { CustomerProductDetail } from "../pages/app/customer/ProductDetail";
-import { CartPage as CustomerCart } from "../pages/app/customer/Cart";
-import { Checkout as CustomerCheckout } from "../pages/app/customer/Checkout";
-import { CustomerOrders } from "../pages/app/customer/Orders";
-import { CustomerOrderDetail } from "../pages/app/customer/OrderDetail";
-import { CustomerTrackDelivery } from "../pages/app/customer/TrackDelivery";
-import { CustomerSubscriptions } from "../pages/app/customer/Subscriptions";
-import { SavedFarms as CustomerSavedFarms } from "../pages/app/customer/SavedFarms";
-import { NotificationsPage as CustomerNotifications } from "../pages/app/customer/Notifications";
-import { CustomerReviews } from "../pages/app/customer/Reviews";
-import { CustomerComplaints } from "../pages/app/customer/Complaints";
-import { CustomerSupport, CustomerProfile } from "../pages/app/customer/Wrappers";
+import { CustomerDashboard } from "../pages/customer/Dashboard";
+import { Shop as CustomerShop } from "../pages/customer/Shop";
+import { CustomerProductDetail } from "../pages/customer/ProductDetail";
+import { CartPage as CustomerCart } from "../pages/customer/Cart";
+import { Checkout as CustomerCheckout } from "../pages/customer/Checkout";
+import { CustomerOrders } from "../pages/customer/Orders";
+import { CustomerOrderDetail } from "../pages/customer/OrderDetail";
+import { CustomerTrackDelivery } from "../pages/customer/TrackDelivery";
+import { CustomerSubscriptions } from "../pages/customer/Subscriptions";
+import { SavedFarms as CustomerSavedFarms } from "../pages/customer/SavedFarms";
+import { NotificationsPage as CustomerNotifications } from "../pages/customer/Notifications";
+import { CustomerReviews } from "../pages/customer/Reviews";
+import { CustomerComplaints } from "../pages/customer/Complaints";
+import { CustomerSupport, CustomerProfile } from "../pages/customer/Wrappers";
 
 // Farmer portal
-import { FarmerDashboard } from "../pages/app/farmer/Dashboard";
-import { FarmerOnboarding } from "../pages/app/farmer/Onboarding";
-import { FarmProfile } from "../pages/app/farmer/FarmProfile";
-import { FarmerBatches } from "../pages/app/farmer/Batches";
-import { FarmerBatchDetail } from "../pages/app/farmer/BatchDetail";
-import { FarmerIoT } from "../pages/app/farmer/IoT";
-import { FarmerAI } from "../pages/app/farmer/AI";
-import { FarmerProducts } from "../pages/app/farmer/Products";
-import { FarmerPricing } from "../pages/app/farmer/Pricing";
-import { FarmerOrders } from "../pages/app/farmer/Orders";
-import { FarmerQuotations } from "../pages/app/farmer/Quotations";
-import { FarmerAnalytics } from "../pages/app/farmer/Analytics";
-import { FarmerComplaints } from "../pages/app/farmer/Complaints";
-import { FarmerSupport, FarmerSettings } from "../pages/app/farmer/Wrappers";
+import { FarmerDashboard } from "../pages/farmer/Dashboard";
+import { FarmerOnboarding } from "../pages/farmer/Onboarding";
+import { FarmProfile } from "../pages/farmer/FarmProfile";
+import { FarmerBatches } from "../pages/farmer/Batches";
+import { FarmerBatchDetail } from "../pages/farmer/BatchDetail";
+import { FarmerIoT } from "../pages/farmer/IoT";
+import { FarmerAI } from "../pages/farmer/AI";
+import { FarmerProducts } from "../pages/farmer/Products";
+import { FarmerPricing } from "../pages/farmer/Pricing";
+import { FarmerOrders } from "../pages/farmer/Orders";
+import { FarmerQuotations } from "../pages/farmer/Quotations";
+import { FarmerAnalytics } from "../pages/farmer/Analytics";
+import { FarmerComplaints } from "../pages/farmer/Complaints";
+import { FarmerSupport, FarmerSettings } from "../pages/farmer/Wrappers";
 
 // Business portal
-import { BusinessDashboard } from "../pages/app/business/Dashboard";
-import { BusinessRequests } from "../pages/app/business/Requests";
-import { BusinessRequestDetail } from "../pages/app/business/RequestDetail";
-import { BusinessSuppliers } from "../pages/app/business/Suppliers";
-import { BusinessOrders, BusinessPayments, BusinessAnalytics } from "../pages/app/business/Commerce";
-import { BusinessTrackingList } from "../pages/app/business/TrackingList";
-import { BusinessSupport, BusinessProfile, BusinessTracking, BusinessOnboarding } from "../pages/app/business/Wrappers";
+import { BusinessDashboard } from "../pages/business/Dashboard";
+import { BusinessRequests } from "../pages/business/Requests";
+import { BusinessRequestDetail } from "../pages/business/RequestDetail";
+import { BusinessSuppliers } from "../pages/business/Suppliers";
+import { BusinessOrders, BusinessPayments, BusinessAnalytics } from "../pages/business/Commerce";
+import { BusinessTrackingList } from "../pages/business/TrackingList";
+import { BusinessSupport, BusinessProfile, BusinessTracking, BusinessOnboarding } from "../pages/business/Wrappers";
 
 // Rider portal
-import { RiderDashboard } from "../pages/app/rider/Dashboard";
-import { RiderAssignments, RiderAssignmentDetail, RiderHistory } from "../pages/app/rider/Deliveries";
-import { RiderSupport, RiderProfile } from "../pages/app/rider/Wrappers";
+import { RiderDashboard } from "../pages/rider/Dashboard";
+import { RiderAssignments, RiderAssignmentDetail, RiderHistory } from "../pages/rider/Deliveries";
+import { RiderSupport, RiderProfile } from "../pages/rider/Wrappers";
 
 // Admin portal
-import { AdminDashboard } from "../pages/app/admin/Dashboard";
-import { AdminUsers } from "../pages/app/admin/Users";
-import { AdminFarms } from "../pages/app/admin/Farms";
-import { AdminOperations } from "../pages/app/admin/Operations";
-import { AdminCommerce } from "../pages/app/admin/Commerce";
-import { AdminB2B } from "../pages/app/admin/B2B";
-import { AdminAIIoT } from "../pages/app/admin/AIIoT";
-import { AdminAnalytics } from "../pages/app/admin/Analytics";
-import { AdminSupport } from "../pages/app/admin/Support";
-import { AdminProfile, AdminChat, AdminNotifications } from "../pages/app/admin/Wrappers";
+import { AdminDashboard } from "../pages/admin/Dashboard";
+import { AdminUsers } from "../pages/admin/Users";
+import { AdminFarms } from "../pages/admin/Farms";
+import { AdminOperations } from "../pages/admin/Operations";
+import { AdminCommerce } from "../pages/admin/Commerce";
+import { AdminB2B } from "../pages/admin/B2B";
+import { AdminAIIoT } from "../pages/admin/AIIoT";
+import { AdminAnalytics } from "../pages/admin/Analytics";
+import { AdminSupport } from "../pages/admin/Support";
+import { AdminProfile, AdminChat, AdminNotifications } from "../pages/admin/Wrappers";
 
 // Super Admin governance portal
-import { SuperAdminDashboard } from "../pages/app/superadmin/Dashboard";
-import { SuperAdminCases } from "../pages/app/superadmin/Cases";
-import { SuperAdminUsers } from "../pages/app/superadmin/Users";
-import { SuperAdminFarms } from "../pages/app/superadmin/Farms";
-import { SuperAdminAnalytics } from "../pages/app/superadmin/Analytics";
-import { SuperAdminAuditLogs } from "../pages/app/superadmin/AuditLogs";
-import { SuperAdminSupport } from "../pages/app/superadmin/Support";
-import { SuperAdminSettings } from "../pages/app/superadmin/Settings";
-import { ProfilePage } from "../pages/app/shared/Profile";
+import { SuperAdminDashboard } from "../pages/superadmin/Dashboard";
+import { SuperAdminCases } from "../pages/superadmin/Cases";
+import { SuperAdminUsers } from "../pages/superadmin/Users";
+import { SuperAdminFarms } from "../pages/superadmin/Farms";
+import { SuperAdminAnalytics } from "../pages/superadmin/Analytics";
+import { SuperAdminAuditLogs } from "../pages/superadmin/AuditLogs";
+import { SuperAdminSupport } from "../pages/superadmin/Support";
+import { SuperAdminSettings } from "../pages/superadmin/Settings";
+import { ProfilePage } from "../pages/shared/Profile";
 
 /** Portal section factory: /app/<role>/* guarded by auth + role, with explicit nested routes. */
 function portal(
