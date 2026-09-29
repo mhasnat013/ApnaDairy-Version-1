@@ -8,7 +8,7 @@ from sqlalchemy import func
 from sqlalchemy.orm import Session, joinedload
 
 from app import schemas as s
-from app.database import get_db
+from app.db.database import get_db
 from app.auth.deps import get_current_user, require_role
 from app.models import (
     AdminActionLog,
@@ -27,7 +27,7 @@ from app.models.enums import (
     ESCALATION_CASE_TYPES, ESCALATION_PRIORITIES, FARM_VERIFICATION,
     USER_ROLES, USER_STATUS,
 )
-from app.routers._helpers import get_or_404, log_admin_action, notify
+from app.api.routes._helpers import get_or_404, log_admin_action, notify
 
 router = APIRouter(prefix="/admin", tags=["admin"])
 

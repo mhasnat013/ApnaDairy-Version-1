@@ -8,15 +8,15 @@ Supabase SQL Editor — this process never connects to the live database.
 import asyncio
 from contextlib import asynccontextmanager, suppress
 
-import app.database as dbmod  # noqa: E402
+import app.db.database as dbmod  # noqa: E402
 import app.models  # noqa: E402,F401  (registers all 22 tables on Base.metadata)
-from app.config import get_settings
-from app.database import make_engine, make_session_factory
+from app.core.config import get_settings
+from app.db.database import make_engine, make_session_factory
 
 settings = get_settings()
 
 # Wire the shared engine/session from settings. Routers resolve get_db() from
-# app.database at call time, so this single assignment is enough.
+# app.db.database at call time, so this single assignment is enough.
 engine = make_engine(settings.DATABASE_URL)
 dbmod.engine = engine
 dbmod.SessionLocal = make_session_factory(engine)
@@ -26,7 +26,7 @@ from fastapi.middleware.cors import CORSMiddleware  # noqa: E402
 
 from app.frontend import mount_frontend  # noqa: E402
 from app.services.batch_automation import scheduler_loop  # noqa: E402
-from app.routers import (  # noqa: E402
+from app.api.routes import (  # noqa: E402
     admin,
     analytics,
     auth,

@@ -4,8 +4,8 @@ from datetime import date, datetime, timedelta, timezone
 from decimal import Decimal
 
 from app.auth.security import hash_password
-from app.config import get_settings
-from app.database import Base, make_engine, make_session_factory
+from app.core.config import get_settings
+from app.db.database import Base, make_engine, make_session_factory
 from app.models import (AIPrediction, AdminActionLog, AdminApplication, AdminFarmAssignment,
     BulkPurchaseRequest, Cart, ChatbotMessage, Complaint, Delivery,
     DeliveryTracking, Discount, EscalationCase, Farm, FarmAnalytics, IoTSensorReading,

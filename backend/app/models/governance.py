@@ -12,7 +12,7 @@ from sqlalchemy import Boolean, DateTime, Enum, ForeignKey, Integer, JSON, Strin
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Mapped, mapped_column
 
-from app.database import Base
+from app.db.database import Base
 from .enums import (
     ADMIN_APPLICATION_STATUS,
     ESCALATION_CASE_TYPES,

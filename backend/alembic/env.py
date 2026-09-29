@@ -12,14 +12,14 @@ from alembic import context
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from app.database import Base, make_engine  # noqa: E402
+from app.db.database import Base, make_engine  # noqa: E402
 import app.models  # noqa: E402,F401  (register all 22 tables)
 
 config = context.config
 
 # Never require real credentials here. For --sql the URL only picks the
 # dialect; offline mode never connects.
-from app.config import get_settings  # noqa: E402
+from app.core.config import get_settings  # noqa: E402
 DATABASE_URL = get_settings().DATABASE_URL
 # Alembic uses ConfigParser interpolation; percent-encoded credentials such
 # as `%40` must be escaped before being placed into sqlalchemy.url.

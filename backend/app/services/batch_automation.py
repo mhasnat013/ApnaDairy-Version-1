@@ -16,7 +16,7 @@ from datetime import datetime, timedelta, timezone
 from sqlalchemy import func
 from sqlalchemy.orm import Session
 
-from app.config import Settings
+from app.core.config import Settings
 from app.models import AIPrediction, IoTSensorReading, MilkBatch
 from app.services import ai_service
 

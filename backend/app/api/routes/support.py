@@ -11,9 +11,9 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 
 from app import schemas as s
-from app.database import get_db
+from app.db.database import get_db
 from app.auth.deps import get_current_user
-from app.config import get_settings
+from app.core.config import get_settings
 from app.models import ChatbotMessage, User
 
 router = APIRouter(prefix="/support", tags=["support"])

@@ -7,7 +7,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session, joinedload
 
 from app import schemas as s
-from app.database import get_db
+from app.db.database import get_db
 from app.auth.deps import get_current_user, require_role
 from app.models import (
     Complaint,
@@ -19,7 +19,7 @@ from app.models import (
     User,
 )
 from app.models.enums import COMPLAINT_STATUS, SUBSCRIPTION_FREQUENCY
-from app.routers._helpers import get_or_404, log_admin_action, notify
+from app.api.routes._helpers import get_or_404, log_admin_action, notify
 
 router = APIRouter(tags=["engagement"])
 

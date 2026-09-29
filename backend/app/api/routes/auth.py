@@ -20,11 +20,11 @@ from app.auth.security import (
     hash_password,
     verify_password,
 )
-from app.config import get_settings
-from app.database import get_db
+from app.core.config import get_settings
+from app.db.database import get_db
 from app.models import Cart, User
 from app.models.enums import PUBLIC_ROLES
-from app.rate_limit import limiter
+from app.core.rate_limit import limiter
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 

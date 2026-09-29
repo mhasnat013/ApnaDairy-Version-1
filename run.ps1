@@ -54,7 +54,7 @@ finally {
 
 Push-Location $Backend
 try {
-    $DatabaseUrl = (& $Python -c "from app.config import get_settings; print(get_settings().DATABASE_URL)").Trim()
+    $DatabaseUrl = (& $Python -c "from app.core.config import get_settings; print(get_settings().DATABASE_URL)").Trim()
     if ($LASTEXITCODE -ne 0) { throw "Could not read the database configuration." }
 
     if ($DatabaseUrl.StartsWith("sqlite:")) {

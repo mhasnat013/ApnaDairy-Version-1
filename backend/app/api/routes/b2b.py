@@ -6,7 +6,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy.orm import Session, joinedload
 
 from app import schemas as s
-from app.database import get_db
+from app.db.database import get_db
 from app.auth.deps import get_current_user, get_own_farm, require_role
 from app.models import (
     BulkPurchaseRequest,
@@ -17,7 +17,7 @@ from app.models import (
     User,
 )
 from app.models.enums import REQUEST_STATUS
-from app.routers._helpers import get_or_404, notify
+from app.api.routes._helpers import get_or_404, notify
 
 router = APIRouter(prefix="/b2b", tags=["b2b"])
 

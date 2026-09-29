@@ -20,7 +20,7 @@ from sqlalchemy import create_engine  # noqa: E402
 from sqlalchemy.orm import sessionmaker  # noqa: E402
 from sqlalchemy.pool import StaticPool  # noqa: E402
 
-from app.database import Base, get_db  # noqa: E402
+from app.db.database import Base, get_db  # noqa: E402
 import app.models  # noqa: E402,F401
 from app.main import app  # noqa: E402
 

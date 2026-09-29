@@ -5,7 +5,7 @@ from sqlalchemy import func
 from sqlalchemy.orm import Session
 
 from app import schemas as s
-from app.database import get_db
+from app.db.database import get_db
 from app.auth.deps import get_current_user, get_own_farm, require_role
 from app.models import (
     AIPrediction,

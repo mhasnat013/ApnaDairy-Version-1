@@ -8,10 +8,10 @@ from sqlalchemy.orm import Session, joinedload
 
 from app import schemas as s
 from app.auth.deps import get_current_user, get_own_farm, require_role
-from app.database import get_db
+from app.db.database import get_db
 from app.models import Discount, Farm, MilkBatch, PriceHistory, Product, Review, Subscription, User
 from app.models.enums import FARM_VERIFICATION, PRODUCT_STATUS
-from app.routers._helpers import apply_paging, get_or_404, notify
+from app.api.routes._helpers import apply_paging, get_or_404, notify
 
 router = APIRouter(tags=["catalog"])
 

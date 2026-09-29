@@ -9,8 +9,8 @@ from sqlalchemy.orm import Session
 
 from app import schemas as s
 from app.auth.deps import require_role
-from app.config import get_settings
-from app.database import get_db
+from app.core.config import get_settings
+from app.db.database import get_db
 from app.models import (
     AIPrediction,
     AdminActionLog,
@@ -31,7 +31,7 @@ from app.models.enums import (
     ESCALATION_STATUS,
     USER_STATUS,
 )
-from app.routers._helpers import get_or_404, log_admin_action, notify
+from app.api.routes._helpers import get_or_404, log_admin_action, notify
 
 router = APIRouter(prefix="/super-admin", tags=["super-admin"])
 
