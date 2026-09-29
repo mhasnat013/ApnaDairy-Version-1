@@ -37,6 +37,12 @@ run.ps1 / run.sh         Windows and Bash launchers
 
 ## Complete file and folder structure
 
+## Complete project documentation
+
+For first-time setup, Supabase connection, portal links, safe credential setup,
+frontend/backend responsibilities, and verification commands, see the complete
+[project documentation PDF](docs/ApnaDairy-Complete-Project-Documentation.pdf).
+
 The project is separated into a React frontend and a FastAPI backend. Runtime
 folders such as `node_modules`, `.venv`, `dist`, `__pycache__`, and local
 SQLite files are ignored by Git and are intentionally not uploaded.
