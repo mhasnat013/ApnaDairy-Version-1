@@ -25,8 +25,8 @@ fi
 echo "==> Preparing ApnaDairy"
 
 if [ ! -d "$VENV" ]; then
-  echo "--> Creating the Python virtual environment"
-  "$SYSTEM_PYTHON" -m venv "$VENV"
+  echo "Backend environment is missing. Run ./setup.sh once before starting the server." >&2
+  exit 1
 fi
 
 if [ -x "$VENV/bin/python" ]; then
@@ -38,22 +38,13 @@ else
   ALEMBIC="$VENV/Scripts/alembic.exe"
 fi
 
-echo "--> Installing backend dependencies"
-"$PYTHON" -m pip install -q -r "$BACKEND/requirements.txt"
-
-echo "--> Installing and building the frontend"
-(
-  cd "$FRONTEND"
-  if [ -d node_modules ]; then
-    npm install --no-audit --no-fund
-  else
-    npm ci --no-audit --no-fund
-  fi
-  npm run build
-)
+if [ ! -d "$FRONTEND/node_modules" ]; then
+  echo "Frontend dependencies are missing. Run ./setup.sh once before starting the server." >&2
+  exit 1
+fi
 
 cd "$BACKEND"
-DATABASE_URL_RESOLVED="$("$PYTHON" -c 'from app.config import get_settings; print(get_settings().DATABASE_URL)')"
+DATABASE_URL_RESOLVED="$("$PYTHON" -c 'from app.core.config import get_settings; print(get_settings().DATABASE_URL)')"
 if [[ "$DATABASE_URL_RESOLVED" == sqlite:* ]]; then
   echo "--> Initialising/upgrading the local SQLite database"
   "$ALEMBIC" upgrade head

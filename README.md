@@ -11,6 +11,17 @@ ApnaDairy is a final-year project for verified farms, milk-batch operations, col
 
 ## Run it
 
+Install dependencies once (or explicitly reinstall them) with:
+
+```powershell
+.\setup.ps1
+# Reinstall dependencies only when you intentionally request it:
+.\setup.ps1 -ReinstallDependencies
+```
+
+Then start the server. The start scripts do not run `pip install`, `npm install`,
+or `npm ci` on every launch:
+
 On Windows PowerShell:
 
 ```powershell
@@ -22,6 +33,13 @@ On macOS, Linux, WSL, or Git Bash:
 ```bash
 ./run.sh
 ```
+
+For macOS/Linux/WSL/Git Bash, install once with `./setup.sh` or intentionally
+reinstall frontend dependencies with `./setup.sh --reinstall`.
+
+Use `.\run.ps1 -BuildFrontend` only when you intentionally want to rebuild
+the frontend during startup. The default startup path reuses installed
+dependencies and the existing build.
 
 Then open http://localhost:8000. The same FastAPI process serves the compiled frontend and the API. See [`RUN-LOCALLY.md`](RUN-LOCALLY.md) for admin seeding, ports, Supabase setup, and troubleshooting.
 

@@ -1,7 +1,8 @@
 [CmdletBinding()]
 param(
     [ValidateRange(1, 65535)]
-    [int]$Port = $(if ($env:PORT) { [int]$env:PORT } else { 8000 })
+    [int]$Port = $(if ($env:PORT) { [int]$env:PORT } else { 8000 }),
+    [switch]$BuildFrontend
 )
 
 $ErrorActionPreference = "Stop"
@@ -15,41 +16,27 @@ $Alembic = Join-Path $Venv "Scripts\alembic.exe"
 Write-Host "==> Preparing ApnaDairy"
 
 if (-not (Test-Path -LiteralPath $Python)) {
-    Write-Host "--> Creating the Python virtual environment"
-    if (Get-Command python -ErrorAction SilentlyContinue) {
-        & python -m venv $Venv
-    }
-    elseif (Get-Command py -ErrorAction SilentlyContinue) {
-        & py -3 -m venv $Venv
-    }
-    else {
-        throw "Python 3.11 or newer is required."
-    }
+    throw "Backend environment is missing. Run .\setup.ps1 once before starting the server."
 }
 
 if (-not (Get-Command npm -ErrorAction SilentlyContinue)) {
     throw "Node.js 18 or newer (including npm) is required."
 }
 
-Write-Host "--> Installing backend dependencies"
-& $Python -m pip install -q -r (Join-Path $Backend "requirements.txt")
-if ($LASTEXITCODE -ne 0) { throw "Backend dependency installation failed." }
-
-Write-Host "--> Installing and building the frontend"
-Push-Location $Frontend
-try {
-    if (Test-Path -LiteralPath (Join-Path $Frontend "node_modules")) {
-        & npm install --no-audit --no-fund
-    }
-    else {
-        & npm ci --no-audit --no-fund
-    }
-    if ($LASTEXITCODE -ne 0) { throw "Frontend dependency installation failed." }
-    & npm run build
-    if ($LASTEXITCODE -ne 0) { throw "Frontend build failed." }
+if (-not (Test-Path -LiteralPath (Join-Path $Frontend "node_modules"))) {
+    throw "Frontend dependencies are missing. Run .\setup.ps1 once before starting the server."
 }
-finally {
-    Pop-Location
+
+if ($BuildFrontend) {
+    Write-Host "--> Building the frontend (dependencies are not installed)"
+    Push-Location $Frontend
+    try {
+        & npm run build
+        if ($LASTEXITCODE -ne 0) { throw "Frontend build failed." }
+    }
+    finally {
+        Pop-Location
+    }
 }
 
 Push-Location $Backend

@@ -12,6 +12,20 @@ The default setup is local and does not need Supabase, Docker, or paid services.
 Open PowerShell in this folder and run:
 
 ```powershell
+.\setup.ps1
+```
+
+The setup command creates the virtual environment, installs Python/npm
+dependencies, and builds the frontend. It is a one-time setup command. To
+intentionally reinstall dependencies later, run:
+
+```powershell
+.\setup.ps1 -ReinstallDependencies
+```
+
+After setup, start the project with:
+
+```powershell
 .\run.ps1
 ```
 
@@ -25,19 +39,27 @@ Set-ExecutionPolicy -Scope Process Bypass
 ## macOS, Linux, WSL, or Git Bash
 
 ```bash
+./setup.sh
 ./run.sh
 ```
 
+Use `./setup.sh --reinstall` only when you intentionally want to reinstall
+frontend dependencies.
+
 Open **http://localhost:8000**. FastAPI serves both the web app and the API from this address. API documentation is at **http://localhost:8000/docs**.
+
+The setup command:
+
+1. creates `backend/.venv` when needed;
+2. installs the pinned Python and npm dependencies; and
+3. builds the React frontend.
 
 The launcher:
 
-1. creates `backend/.venv` when needed;
-2. installs the pinned Python and npm dependencies;
-3. builds the React frontend;
-4. applies Alembic migrations to the default local SQLite database;
-5. optionally seeds demo data; and
-6. starts FastAPI, which serves the built frontend.
+1. checks that the environment and `node_modules` already exist;
+2. applies Alembic migrations to the default local SQLite database;
+3. optionally seeds demo data; and
+4. starts FastAPI, without running pip/npm installation.
 
 Use another port with `./run.ps1 -Port 8080` on Windows or `PORT=8080 ./run.sh` in Bash.
 
@@ -79,5 +101,5 @@ Never paste database passwords or API keys into source files. If a secret has be
 - `Python ... is required`: install Python and enable its PATH option.
 - `Node.js ... is required`: install the current Node.js LTS release.
 - Port in use: select another port as shown above.
-- Frontend changes are not visible: stop the server and rerun the launcher so it rebuilds `frontend/dist`.
+- Frontend changes are not visible in the compiled app: run `.\setup.ps1` again, or use `.\run.ps1 -BuildFrontend` for an intentional build without dependency installation.
 - Start with a clean local database: stop the server, delete `backend/data/apnadairy.db`, and rerun. This permanently removes local data.
