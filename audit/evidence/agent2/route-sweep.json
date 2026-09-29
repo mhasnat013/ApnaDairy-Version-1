@@ -1,0 +1,293 @@
+[
+ {
+  "route": "/",
+  "status": 200,
+  "console_errors": [],
+  "h1": "FRESH MILK\nSHOULD NEVER\nBE A GUESS.",
+  "heading_ok": false,
+  "overflow_px": 0,
+  "img_count": 4,
+  "broken_imgs": [
+   {
+    "src": "farmer-hero.png",
+    "w": 0,
+    "alt": "A Pakistani dairy farmer with an ApnaDairy team member at a ",
+    "visible": true
+   },
+   {
+    "src": "dairy-facility.png",
+    "w": 0,
+    "alt": "Milk bottle and steel cans inside a modern ApnaDairy facilit",
+    "visible": true
+   },
+   {
+    "src": "farmer-hero.png",
+    "w": 0,
+    "alt": "",
+    "visible": true
+   }
+  ],
+  "missing_alt": [
+   "farmer-hero.png"
+  ],
+  "nav_present": true
+ },
+ {
+  "route": "/how-it-works",
+  "status": 200,
+  "console_errors": [],
+  "h1": "FROM OUR FARMS\nTO YOUR TABLE",
+  "heading_ok": false,
+  "overflow_px": 0,
+  "img_count": 0,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ },
+ {
+  "route": "/freshness-engine",
+  "status": 200,
+  "console_errors": [],
+  "h1": "AI THAT WATCHES\nYOUR MILK",
+  "heading_ok": false,
+  "overflow_px": 0,
+  "img_count": 1,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ },
+ {
+  "route": "/for-farmers",
+  "status": 200,
+  "console_errors": [],
+  "h1": "YOUR FARM,\nCONNECTED TO THE MARKET",
+  "heading_ok": false,
+  "overflow_px": 0,
+  "img_count": 1,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ },
+ {
+  "route": "/for-customers",
+  "status": 200,
+  "console_errors": [],
+  "h1": "MILK YOU CAN VERIFY,\nNOT JUST BUY",
+  "heading_ok": false,
+  "overflow_px": 0,
+  "img_count": 1,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ },
+ {
+  "route": "/for-businesses",
+  "status": 200,
+  "console_errors": [],
+  "h1": "PROCUREMENT WITHOUT\nTHE PHONE TAG",
+  "heading_ok": false,
+  "overflow_px": 0,
+  "img_count": 0,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ },
+ {
+  "route": "/for-delivery-riders",
+  "status": 200,
+  "console_errors": [],
+  "h1": "DELIVERIES,\nORGANIZED",
+  "heading_ok": false,
+  "overflow_px": 0,
+  "img_count": 0,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ },
+ {
+  "route": "/farms",
+  "status": 200,
+  "console_errors": [
+   "console.error: [JavaScript Error: \"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:8000/api/v1/farms. (Reason: C",
+   "console.error: [JavaScript Error: \"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:8000/api/v1/farms. (Reason: C"
+  ],
+  "h1": "VERIFIED FARMS",
+  "heading_ok": true,
+  "overflow_px": 0,
+  "img_count": 0,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ },
+ {
+  "route": "/marketplace",
+  "status": 200,
+  "console_errors": [
+   "console.error: [JavaScript Error: \"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:8000/api/v1/products. (Reason",
+   "console.error: [JavaScript Error: \"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:8000/api/v1/products. (Reason"
+  ],
+  "h1": "FRESH DAIRY,\nVERIFIED FARMS",
+  "heading_ok": false,
+  "overflow_px": 0,
+  "img_count": 0,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ },
+ {
+  "route": "/batch-trace",
+  "status": 200,
+  "console_errors": [],
+  "h1": "TRACE A BATCH",
+  "heading_ok": true,
+  "overflow_px": 0,
+  "img_count": 0,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ },
+ {
+  "route": "/dynamic-pricing",
+  "status": 200,
+  "console_errors": [],
+  "h1": "FAIR PRICES THAT MOVE\nWITH FRESHNESS",
+  "heading_ok": false,
+  "overflow_px": 0,
+  "img_count": 0,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ },
+ {
+  "route": "/about",
+  "status": 200,
+  "console_errors": [],
+  "h1": "FRESHNESS YOU\nCAN TRUST",
+  "heading_ok": false,
+  "overflow_px": 0,
+  "img_count": 0,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ },
+ {
+  "route": "/support",
+  "status": 200,
+  "console_errors": [],
+  "h1": "HOW CAN\nWE HELP?",
+  "heading_ok": false,
+  "overflow_px": 0,
+  "img_count": 0,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ },
+ {
+  "route": "/contact",
+  "status": 200,
+  "console_errors": [],
+  "h1": "GET IN TOUCH",
+  "heading_ok": true,
+  "overflow_px": 0,
+  "img_count": 0,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ },
+ {
+  "route": "/faq",
+  "status": 200,
+  "console_errors": [],
+  "h1": "QUESTIONS,\nANSWERED",
+  "heading_ok": true,
+  "overflow_px": 0,
+  "img_count": 0,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ },
+ {
+  "route": "/login",
+  "status": 200,
+  "console_errors": [],
+  "h1": "WELCOME BACK",
+  "heading_ok": true,
+  "overflow_px": 0,
+  "img_count": 0,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ },
+ {
+  "route": "/register",
+  "status": 200,
+  "console_errors": [],
+  "h1": "JOIN APNADAIRY",
+  "heading_ok": true,
+  "overflow_px": 0,
+  "img_count": 0,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ },
+ {
+  "route": "/forgot-password",
+  "status": 200,
+  "console_errors": [],
+  "h1": "RESET YOUR PASSWORD",
+  "heading_ok": true,
+  "overflow_px": 0,
+  "img_count": 0,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ },
+ {
+  "route": "/privacy",
+  "status": 200,
+  "console_errors": [],
+  "h1": "PRIVACY POLICY",
+  "heading_ok": true,
+  "overflow_px": 0,
+  "img_count": 0,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ },
+ {
+  "route": "/terms",
+  "status": 200,
+  "console_errors": [],
+  "h1": "TERMS OF SERVICE",
+  "heading_ok": true,
+  "overflow_px": 0,
+  "img_count": 0,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ },
+ {
+  "route": "/unauthorized",
+  "status": 200,
+  "console_errors": [],
+  "h1": "NOT YOUR DOOR",
+  "heading_ok": false,
+  "overflow_px": 0,
+  "img_count": 0,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ },
+ {
+  "route": "/this-page-does-not-exist-xyz",
+  "status": 200,
+  "console_errors": [],
+  "h1": "THIS PAGE WANDERED OFF",
+  "heading_ok": true,
+  "overflow_px": 0,
+  "img_count": 0,
+  "broken_imgs": [],
+  "missing_alt": [],
+  "nav_present": true
+ }
+]

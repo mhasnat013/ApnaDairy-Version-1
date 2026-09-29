@@ -1,0 +1,40 @@
+{
+ "home_390_errors": [],
+ "home_768_errors": [],
+ "home_1440_errors": [],
+ "ecosystem_text": {
+  "hasB2C": true,
+  "hasB2B": false,
+  "hasIoT": false,
+  "hasAI": false
+ },
+ "popups": {
+  "B2C Marketplace": {
+   "opened": true,
+   "escape_closed": true
+  },
+  "B2B Procurement": {
+   "error": "Locator.click: Timeout 4000ms exceeded.\nCall log:\n  - waiting for get_by_text(\"B2B Procurement\").first\n"
+  },
+  "IoT Monitoring": {
+   "error": "Locator.click: Timeout 4000ms exceeded.\nCall log:\n  - waiting for get_by_text(\"IoT Monitoring\").first\n"
+  },
+  "AI Milking": {
+   "error": "Locator.click: Timeout 4000ms exceeded.\nCall log:\n  - waiting for get_by_text(\"AI Milking\").first\n"
+  }
+ },
+ "nav_keyboard": {
+  "product_focused": "Product",
+  "escape_ok": true
+ },
+ "film": {
+  "comingSoon": true,
+  "filmText": true,
+  "videos": [],
+  "mp4s": []
+ },
+ "film_requests_1min": [],
+ "reduced_motion_emulated": true,
+ "mobile_menu_opened": true,
+ "mobile_nav_touch_min": 0
+}

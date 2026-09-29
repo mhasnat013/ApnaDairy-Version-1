@@ -1,0 +1,43 @@
+{
+ "module_nodes": [
+  {
+   "label": "B2C Marketplace \u2014 selected, activate for details",
+   "text": "For homes"
+  },
+  {
+   "label": "B2B Procurement \u2014 select to preview",
+   "text": "For businesses"
+  },
+  {
+   "label": "IoT Monitoring \u2014 select to preview",
+   "text": "Cold chain"
+  },
+  {
+   "label": "AI Milking & Freshness \u2014 select to preview",
+   "text": "Freshness AI"
+  },
+  {
+   "label": "",
+   "text": "About B2C Marketplace"
+  }
+ ],
+ "b2c": {
+  "aria_after_click": "B2C Marketplace \u2014 selected, activate for details",
+  "panel_images": [
+   "farmer-hero.png"
+  ],
+  "error": "Locator.click: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"#ecosystem button\").filter(has_text=\"About\").first\n    - locator resolved to <button class=\"btn-pill-light\">\u2026</button>\n  - at"
+ },
+ "b2b": {
+  "error": "Locator.hover: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"#ecosystem button[aria-label*='B2B Procurement']\").first\n    - locator resolved to <button type=\"button\" aria-pressed=\"false"
+ },
+ "iot": {
+  "error": "Locator.hover: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"#ecosystem button[aria-label*='IoT Monitoring']\").first\n    - locator resolved to <button type=\"button\" aria-pressed=\"false\""
+ },
+ "ai": {
+  "error": "Locator.hover: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"#ecosystem button\").filter(has_text=\"AI\").first\n    - locator resolved to <button type=\"button\" aria-pressed=\"false\" aria-la"
+ },
+ "keyboard_focus_module": true,
+ "keyboard_enter_selected": "IoT Monitoring \u2014 select to preview",
+ "mobile_popup_error": "Locator.click: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"#ecosystem button\").filter(has_text=\"About\").first\n    - locator resolved t"
+}

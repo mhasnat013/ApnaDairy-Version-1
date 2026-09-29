@@ -1,0 +1,331 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  /* Light cinematic base: warm ivory, ink type. */
+  body {
+    @apply bg-ivory font-sans text-ink antialiased;
+  }
+  ::selection {
+    background: #00a878;
+    color: #ffffff;
+  }
+  /* Visible, on-brand focus ring for keyboard users (WCAG 2.2 AA) */
+  :focus-visible {
+    outline: 2px solid #087857;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #edf6ef;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #dce8df;
+    border-radius: 8px;
+    border: 2px solid #edf6ef;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #087857;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  /* Section eyebrow: Inter small caps emerald kicker (§4 — no mono). */
+  .eyebrow {
+    @apply font-sans text-xs font-semibold uppercase tracking-[0.18em] text-brand-moss;
+  }
+  /* Night eyebrow (deep-forest surfaces): mono kicker in bright action green. */
+  .eyebrow-night {
+    @apply font-tech text-xs font-medium uppercase tracking-[0.18em] text-brand-bright;
+  }
+
+  /* Oversized condensed editorial headings (§4): uppercase, tight leading,
+     responsive clamp() scale. */
+  .display-xl {
+    font-family: theme("fontFamily.display");
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    line-height: 0.88;
+    font-size: clamp(3rem, 8vw, 7.5rem);
+  }
+  /* Base condensed display treatment — same family/weight/case as the
+     oversized variants, size set by the accompanying text-* utility. */
+  .display {
+    font-family: theme("fontFamily.display");
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.005em;
+    line-height: 0.95;
+  }
+  .display-lg {
+    font-family: theme("fontFamily.display");
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.005em;
+    line-height: 0.9;
+    font-size: clamp(2.25rem, 5.5vw, 4.5rem);
+  }
+
+  /* Ploy-inspired pill buttons (§5). */
+  .btn-pill-dark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 44px;
+    padding: 0 1.5rem;
+    border-radius: 9999px;
+    background: #0b3d33;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition:
+      transform 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+      background-color 0.2s ease,
+      box-shadow 0.22s ease;
+  }
+  .btn-pill-dark:hover {
+    background: #195843;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(11, 61, 51, 0.3);
+  }
+  .btn-pill-dark:active {
+    transform: translateY(0) scale(0.98);
+  }
+  .btn-pill-light {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 44px;
+    padding: 0 1.5rem;
+    border-radius: 9999px;
+    background: #ffffff;
+    color: #10261e;
+    border: 1px solid #dce8df;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition:
+      transform 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+      border-color 0.2s ease,
+      color 0.2s ease,
+      box-shadow 0.22s ease;
+  }
+  .btn-pill-light:hover {
+    border-color: #087857;
+    color: #087857;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(16, 38, 30, 0.1);
+  }
+  .btn-pill-light:active {
+    transform: translateY(0) scale(0.98);
+  }
+  .btn-pill-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 44px;
+    padding: 0 1.5rem;
+    border-radius: 9999px;
+    background: transparent;
+    color: #10261e;
+    border: 1.5px solid rgba(16, 38, 30, 0.25);
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition:
+      transform 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+      border-color 0.2s ease,
+      background-color 0.2s ease;
+  }
+  .btn-pill-outline:hover {
+    border-color: #087857;
+    background: rgba(8, 120, 87, 0.06);
+    transform: translateY(-2px);
+  }
+  .btn-pill-outline:active {
+    transform: translateY(0) scale(0.98);
+  }
+}
+
+@layer utilities {
+  /* Premium button micro-interaction: hover lift + press scale.
+     The global reduced-motion reset kills these transitions automatically. */
+  .btn-lift {
+    transition:
+      transform 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 0.22s ease,
+      background-color 0.2s ease,
+      border-color 0.2s ease,
+      color 0.2s ease;
+  }
+  .btn-lift:hover {
+    transform: translateY(-2px);
+  }
+  .btn-lift:active {
+    transform: translateY(0) scale(0.98);
+  }
+
+  /* Desktop nav links (light navbar): sliding emerald underline. */
+  .nav-link {
+    position: relative;
+  }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 5px;
+    height: 2px;
+    border-radius: 2px;
+    background: #087857;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    transform: scaleX(1);
+  }
+
+  /* Soft cinematic grade for imagery on light surfaces: gentle warm vignette. */
+  .cinematic-grade {
+    background:
+      linear-gradient(180deg, rgba(23, 49, 39, 0.28) 0%, rgba(23, 49, 39, 0) 32%, rgba(23, 49, 39, 0) 62%, rgba(23, 49, 39, 0.32) 100%),
+      radial-gradient(120% 90% at 50% 10%, rgba(0, 0, 0, 0) 55%, rgba(23, 49, 39, 0.22) 100%);
+  }
+
+  /* Slow Ken Burns drift for the hero visual panel (paused for reduced motion). */
+  @keyframes kenburns {
+    0% {
+      transform: scale(1) translate(0, 0);
+    }
+    50% {
+      transform: scale(1.08) translate(-1.5%, 1%);
+    }
+    100% {
+      transform: scale(1) translate(0, 0);
+    }
+  }
+  .kenburns {
+    animation: kenburns 26s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  /* Gentle float for the glass stat card. */
+  @keyframes floaty {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+  .floaty {
+    animation: floaty 7s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  /* Orbit dial draw-in: dashed ring rotates in on mount. */
+  @keyframes orbitdraw {
+    from {
+      stroke-dashoffset: 1200;
+      opacity: 0;
+    }
+    to {
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+  }
+  .orbit-draw {
+    stroke-dasharray: 1200;
+    animation: orbitdraw 1.6s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both;
+  }
+
+  /* Honest-labels marquee: seamless loop, pauses on hover. */
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  .marquee-track {
+    animation: marquee 32s linear infinite;
+    will-change: transform;
+  }
+  .marquee:hover .marquee-track {
+    animation-play-state: paused;
+  }
+
+  /* Scroll hint: vertical line that draws down and fades, looping. */
+  @keyframes scrollhint {
+    0% {
+      transform: scaleY(0);
+      transform-origin: top;
+      opacity: 0;
+    }
+    18% {
+      opacity: 1;
+    }
+    55% {
+      transform: scaleY(1);
+      transform-origin: top;
+      opacity: 1;
+    }
+    56% {
+      transform-origin: bottom;
+    }
+    100% {
+      transform: scaleY(0);
+      transform-origin: bottom;
+      opacity: 0;
+    }
+  }
+  .scrollhint {
+    animation: scrollhint 2.4s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+    will-change: transform;
+  }
+
+  /* Cinematic film grain: static emerald-tinted SVG noise at low opacity. */
+  .grain-overlay {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.03 0 0 0 0 0.35 0 0 0 0 0.27 0 0 0 0.6 0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: 0.05;
+  }
+
+  /* Card hover lift: shared premium lift for clickable cards. */
+  .card-lift {
+    transition:
+      transform 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 0.32s ease,
+      border-color 0.25s ease;
+  }
+  .card-lift:hover {
+    transform: translateY(-5px);
+  }
+}
+
+/* Honour reduced motion globally: no smooth scrolling, no animation */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,93 @@
+{
+ "b2b": {
+  "clicked": {
+   "found": true
+  },
+  "panel_img": "farmer-hero.png",
+  "panel_alt": "A Pakistani dairy farmer with an ApnaDairy team member at a ",
+  "selected": [
+   "B2B Procurement \u2014 selected, activate for details"
+  ],
+  "popup_opened": true,
+  "popup_title": "B2B Procurement",
+  "has_features": true,
+  "has_close": true,
+  "explore_href": null,
+  "popup_img": {
+   "src": "farmer-hero.png",
+   "alt": "ApnaDairy partner farm supplying milk at scale"
+  },
+  "focus_inside": true,
+  "escape_closed": true
+ },
+ "iot": {
+  "clicked": {
+   "found": true
+  },
+  "panel_img": "dairy-facility.png",
+  "panel_alt": "Milk bottle and steel cans inside a modern ApnaDairy dairy f",
+  "selected": [
+   "IoT Monitoring \u2014 selected, activate for details"
+  ],
+  "popup_opened": true,
+  "popup_title": "IoT Monitoring",
+  "has_features": false,
+  "has_close": true,
+  "explore_href": null,
+  "popup_img": {
+   "src": "dairy-facility.png",
+   "alt": "Milk bottle and steel cans inside a modern ApnaDairy dairy f"
+  },
+  "focus_inside": true,
+  "escape_closed": true
+ },
+ "ai": {
+  "clicked": {
+   "found": true
+  },
+  "panel_img": "dairy-facility.png",
+  "panel_alt": "Milk quality screening inside an ApnaDairy dairy facility",
+  "selected": [
+   "AI Milking & Freshness \u2014 selected, activate for de"
+  ],
+  "popup_opened": true,
+  "popup_title": "AI Milking & Freshness",
+  "has_features": false,
+  "has_close": true,
+  "explore_href": null,
+  "popup_img": {
+   "src": "dairy-facility.png",
+   "alt": "Milk quality screening inside an ApnaDairy dairy facility"
+  },
+  "focus_inside": true,
+  "escape_closed": true
+ },
+ "b2c": {
+  "clicked": {
+   "found": true
+  },
+  "panel_img": "farmer-hero.png",
+  "panel_alt": "A Pakistani dairy farmer with an ApnaDairy team member at a ",
+  "selected": [
+   "B2C Marketplace \u2014 selected, activate for details"
+  ],
+  "popup_opened": true,
+  "popup_title": "B2C Marketplace",
+  "has_features": true,
+  "has_close": true,
+  "explore_href": null,
+  "popup_img": {
+   "src": "farmer-hero.png",
+   "alt": "A Pakistani dairy farmer with an ApnaDairy team member at a "
+  },
+  "focus_inside": true,
+  "escape_closed": true
+ },
+ "keyboard_activate": "B2B Procurement \u2014 select to preview",
+ "mobile_popup_opened": true,
+ "mobile_dialog_box": {
+  "w": 390,
+  "h": 776
+ },
+ "mobile_escape_closed": true
+}

@@ -1,0 +1,39 @@
+{
+ "enter_selects": [
+  "IoT Monitoring \u2014 selected, activate for "
+ ],
+ "space_selects": [
+  "AI Milking & Freshness \u2014 selected, activ"
+ ],
+ "product_dropdown_opened": true,
+ "product_items": [
+  "ApnaDairy",
+  "B2C MarketplaceVerified dairy,",
+  "B2B ProcurementBulk requests, ",
+  "IoT MonitoringLive cold-chain ",
+  "AI FreshnessFreshness scores a",
+  "Dynamic PricingFair prices dri",
+  "Batch TraceabilityFollow any b",
+  "How It Works",
+  "Freshness Engine",
+  "Verified Farms",
+  "Marketplace",
+  "Support",
+  "Login",
+  "Create Account"
+ ],
+ "role_items": [
+  "ApnaDairy",
+  "How It Works",
+  "FarmersRecord batches, monitor",
+  "CustomersVerified dairy, trace",
+  "BusinessesBulk procurement wit",
+  "Delivery RidersAssignments, pi",
+  "Freshness Engine",
+  "Verified Farms",
+  "Marketplace",
+  "Support",
+  "Login",
+  "Create Account"
+ ]
+}

@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+.admin_password
+*.db
+*.db-journal
+storage/uploads/
+frontend/node_modules/
+frontend/dist/
+backend/.venv/
+_fyp_demo_backup_20260929/
+.pytest_cache/

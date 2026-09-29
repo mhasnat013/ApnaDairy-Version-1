@@ -1,0 +1,265 @@
+{
+ "routes": [
+  {
+   "route": "/",
+   "http": 200,
+   "final_url": "/",
+   "text_len": 4827,
+   "h1": "FRESH MILK\nSHOULD NEVER\nBE A GUESS.",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/how-it-works",
+   "http": 200,
+   "final_url": "/how-it-works",
+   "text_len": 2817,
+   "h1": "FROM OUR FARMS\nTO YOUR TABLE",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/freshness-engine",
+   "http": 200,
+   "final_url": "/freshness-engine",
+   "text_len": 2467,
+   "h1": "AI THAT WATCHES\nYOUR MILK",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/for-farmers",
+   "http": 200,
+   "final_url": "/for-farmers",
+   "text_len": 3374,
+   "h1": "YOUR FARM,\nCONNECTED TO THE MARKET",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/for-customers",
+   "http": 200,
+   "final_url": "/for-customers",
+   "text_len": 3392,
+   "h1": "MILK YOU CAN VERIFY,\nNOT JUST BUY",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/for-businesses",
+   "http": 200,
+   "final_url": "/for-businesses",
+   "text_len": 3509,
+   "h1": "PROCUREMENT WITHOUT\nTHE PHONE TAG",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/for-delivery-riders",
+   "http": 200,
+   "final_url": "/for-delivery-riders",
+   "text_len": 3534,
+   "h1": "DELIVERIES,\nORGANIZED",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/farms",
+   "http": 200,
+   "final_url": "/farms",
+   "text_len": 980,
+   "h1": "VERIFIED FARMS",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/marketplace",
+   "http": 200,
+   "final_url": "/marketplace",
+   "text_len": 1401,
+   "h1": "FRESH DAIRY,\nVERIFIED FARMS",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/batch-trace",
+   "http": 200,
+   "final_url": "/batch-trace",
+   "text_len": 852,
+   "h1": "TRACE A BATCH",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/dynamic-pricing",
+   "http": 200,
+   "final_url": "/dynamic-pricing",
+   "text_len": 2840,
+   "h1": "FAIR PRICES THAT MOVE\nWITH FRESHNESS",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/about",
+   "http": 200,
+   "final_url": "/about",
+   "text_len": 1781,
+   "h1": "FRESHNESS YOU\nCAN TRUST",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/support",
+   "http": 200,
+   "final_url": "/support",
+   "text_len": 2910,
+   "h1": "HOW CAN\nWE HELP?",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/contact",
+   "http": 200,
+   "final_url": "/contact",
+   "text_len": 845,
+   "h1": "GET IN TOUCH",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/faq",
+   "http": 200,
+   "final_url": "/faq",
+   "text_len": 1049,
+   "h1": "QUESTIONS,\nANSWERED",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/login",
+   "http": 200,
+   "final_url": "/login",
+   "text_len": 1046,
+   "h1": "WELCOME BACK",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/register",
+   "http": 200,
+   "final_url": "/register",
+   "text_len": 1190,
+   "h1": "JOIN APNADAIRY",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/forgot-password",
+   "http": 200,
+   "final_url": "/forgot-password",
+   "text_len": 979,
+   "h1": "RESET YOUR PASSWORD",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/reset-password",
+   "http": 200,
+   "final_url": "/reset-password",
+   "text_len": 956,
+   "h1": "INVALID RESET LINK",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/privacy",
+   "http": 200,
+   "final_url": "/privacy",
+   "text_len": 2476,
+   "h1": "PRIVACY POLICY",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/terms",
+   "http": 200,
+   "final_url": "/terms",
+   "text_len": 2473,
+   "h1": "TERMS OF SERVICE",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/unauthorized",
+   "http": 200,
+   "final_url": "/unauthorized",
+   "text_len": 778,
+   "h1": "NOT YOUR DOOR",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route": "/nonexistent-xyz",
+   "http": 200,
+   "final_url": "/nonexistent-xyz",
+   "text_len": 753,
+   "h1": "THIS PAGE WANDERED OFF",
+   "title": "ApnaDairy \u2014 Freshness you can trust"
+  },
+  {
+   "route_check": "custom-404-content",
+   "pass": false
+  },
+  {
+   "route_check": "/app-unauth",
+   "final": "/app",
+   "pass": false
+  },
+  {
+   "route_check": "/admin-dashboard-legacy",
+   "final": "/admin-dashboard",
+   "pass": false
+  },
+  {
+   "route_check": "/app/admin-unauth",
+   "final": "/app/admin",
+   "pass": false
+  },
+  {
+   "route_check": "mobile-nav-open",
+   "clicked": true
+  },
+  {
+   "route_check": "escape-closes-nav",
+   "open_after_escape": false
+  },
+  {
+   "route_check": "reduced-motion-hero-visible",
+   "pass": true
+  },
+  {
+   "route_check": "tab-focus",
+   "focused": "A:Skip to content"
+  }
+ ],
+ "console_errors": [
+  {
+   "url": "http://127.0.0.1:4173/farms",
+   "type": "error",
+   "text": "[JavaScript Error: \"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:8000/api/v1/farms. (Reason: CORS header \u2018Access-Control-Allow-Origin\u2019 missing). Status code: 400.\"]"
+  },
+  {
+   "url": "http://127.0.0.1:4173/farms",
+   "type": "error",
+   "text": "[JavaScript Error: \"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:8000/api/v1/farms. (Reason: CORS request did not succeed). Status code: (null).\"]"
+  },
+  {
+   "url": "http://127.0.0.1:4173/marketplace",
+   "type": "error",
+   "text": "[JavaScript Error: \"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:8000/api/v1/products. (Reason: CORS header \u2018Access-Control-Allow-Origin\u2019 missing). Status code: 400.\"]"
+  },
+  {
+   "url": "http://127.0.0.1:4173/marketplace",
+   "type": "error",
+   "text": "[JavaScript Error: \"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://localhost:8000/api/v1/products. (Reason: CORS request did not succeed). Status code: (null).\"]"
+  },
+  {
+   "url": "http://127.0.0.1:4173/",
+   "type": "error",
+   "text": "THREE.WebGLRenderer: A WebGL context could not be created. Reason:  WebGL creation failed: \n* AllowWebgl2:false restricts context creation on this system. ()"
+  },
+  {
+   "url": "http://127.0.0.1:4173/",
+   "type": "error",
+   "text": "THREE.WebGLRenderer: A WebGL context could not be created. Reason:  WebGL creation failed: \n* AllowWebgl2:false restricts context creation on this system. ()"
+  },
+  {
+   "url": "http://127.0.0.1:4173/",
+   "type": "error",
+   "text": "THREE.WebGLRenderer: Error creating WebGL context."
+  },
+  {
+   "url": "http://127.0.0.1:4173/",
+   "type": "error",
+   "text": "Error"
+  }
+ ]
+}

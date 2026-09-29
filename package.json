@@ -1,0 +1,16 @@
+{
+    "dependencies":  {
+                         "@google/generative-ai":  "^0.24.1",
+                         "@tailwindcss/vite":  "^4.3.3",
+                         "groq-sdk":  "^1.5.0",
+                         "react-markdown":  "^10.1.0",
+                         "react-router-dom":  "^7.18.1",
+                         "react-use":  "^17.6.1",
+                         "recharts":  "^3.10.1",
+                         "swiper":  "^14.0.7",
+                         "tailwindcss":  "^4.3.3"
+                     },
+    "scripts":  {
+                    "dev":  "vite"
+                }
+}
